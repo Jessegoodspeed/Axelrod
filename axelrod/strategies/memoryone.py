@@ -158,6 +158,50 @@ class WinShiftLoseStay(MemoryOnePlayer):
         super().__init__(four_vector)
         self._initial = initial
 
+class CoopWhenBothDef(MemoryOnePlayer):
+    """Player only cooperates when both players had defected.
+
+    Names:
+
+    """
+
+    name = "Coop When Both Defect"
+    classifier = {
+        "memory_depth": 1,  # Memory-one Four-Vector
+        "stochastic": False,
+        "long_run_time": False,
+        "inspects_source": False,
+        "manipulates_source": False,
+        "manipulates_state": False,
+    }
+
+    def __init__(self, initial: Action = D) -> None:
+        four_vector = (0, 0, 0, 1)
+        super().__init__(four_vector)
+        self._initial = initial
+
+class CoopWhenBothDef1(MemoryOnePlayer):
+    """Player cooperates initially and when both players defect.
+
+    Names:
+
+    """
+
+    name = "Coop When Both Defect 1"
+    classifier = {
+        "memory_depth": 1,  # Memory-one Four-Vector
+        "stochastic": False,
+        "long_run_time": False,
+        "inspects_source": False,
+        "manipulates_source": False,
+        "manipulates_state": False,
+    }
+
+    def __init__(self, initial: Action = C) -> None:
+        four_vector = (0, 0, 0, 1)
+        super().__init__(four_vector)
+        self._initial = initial
+
 
 class GTFT(MemoryOnePlayer):
     """Generous Tit For Tat Strategy.

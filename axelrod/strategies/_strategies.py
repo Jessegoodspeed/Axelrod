@@ -180,6 +180,8 @@ from .memoryone import (
     StochasticWSLS,
     WinShiftLoseStay,
     WinStayLoseShift,
+    CoopWhenBothDef,
+    CoopWhenBothDef1,
 )
 from .memoryone import (  # pylint: disable=unused-import
     ReactivePlayer,
@@ -310,6 +312,8 @@ all_strategies = [
     ContriteTitForTat,
     Cooperator,
     CooperatorHunter,
+    CoopWhenBothDef,
+    CoopWhenBothDef1,
     CycleHunter,
     CyclerCCCCCD,
     CyclerCCCD,
