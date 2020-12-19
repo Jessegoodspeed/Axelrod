@@ -202,14 +202,14 @@ class CoopWhenBothDef1(MemoryOnePlayer):
         super().__init__(four_vector)
         self._initial = initial
 
-class FourDefect(MemoryOnePlayer):
+class TwoDefect(MemoryOnePlayer):
     """Player cooperates only after they receive the temptation payoff.
 
     Names:
 
     """
 
-    name = "Four Defect"
+    name = "Two Defect"
     classifier = {
         "memory_depth": 1,  # Memory-one Four-Vector
         "stochastic": False,
@@ -224,14 +224,14 @@ class FourDefect(MemoryOnePlayer):
         super().__init__(four_vector)
         self._initial = initial
 
-class FourCoop(MemoryOnePlayer):
+class TwoCoop(MemoryOnePlayer):
     """Player cooperates initially and after they receive the temptation payoff.
 
     Names:
 
     """
 
-    name = "Four Coop"
+    name = "Two Coop"
     classifier = {
         "memory_depth": 1,  # Memory-one Four-Vector
         "stochastic": False,
