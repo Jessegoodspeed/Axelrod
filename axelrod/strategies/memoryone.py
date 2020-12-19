@@ -202,6 +202,404 @@ class CoopWhenBothDef1(MemoryOnePlayer):
         super().__init__(four_vector)
         self._initial = initial
 
+class FourDefect(MemoryOnePlayer):
+    """Player cooperates only after they receive the temptation payoff.
+
+    Names:
+
+    """
+
+    name = "Four Defect"
+    classifier = {
+        "memory_depth": 1,  # Memory-one Four-Vector
+        "stochastic": False,
+        "long_run_time": False,
+        "inspects_source": False,
+        "manipulates_source": False,
+        "manipulates_state": False,
+    }
+
+    def __init__(self, initial: Action = D) -> None:
+        four_vector = (0, 0, 1, 0)
+        super().__init__(four_vector)
+        self._initial = initial
+
+class FourCoop(MemoryOnePlayer):
+    """Player cooperates initially and after they receive the temptation payoff.
+
+    Names:
+
+    """
+
+    name = "Four Coop"
+    classifier = {
+        "memory_depth": 1,  # Memory-one Four-Vector
+        "stochastic": False,
+        "long_run_time": False,
+        "inspects_source": False,
+        "manipulates_source": False,
+        "manipulates_state": False,
+    }
+
+    def __init__(self, initial: Action = C) -> None:
+        four_vector = (0, 0, 1, 0)
+        super().__init__(four_vector)
+        self._initial = initial
+
+class CuriousDefector(MemoryOnePlayer):
+    """Player cooperates initially and then defects thereafter.
+
+    Names:
+
+    """
+
+    name = "Curious Defector"
+    classifier = {
+        "memory_depth": 1,  # Memory-one Four-Vector
+        "stochastic": False,
+        "long_run_time": False,
+        "inspects_source": False,
+        "manipulates_source": False,
+        "manipulates_state": False,
+    }
+
+    def __init__(self, initial: Action = C) -> None:
+        four_vector = (0, 0, 0, 0)
+        super().__init__(four_vector)
+        self._initial = initial
+
+class SuckerDefect(MemoryOnePlayer):
+    """Player cooperates only after receiving sucker's payoff.
+
+    Names:
+
+    """
+
+    name = "Sucker Defect"
+    classifier = {
+        "memory_depth": 1,  # Memory-one Four-Vector
+        "stochastic": False,
+        "long_run_time": False,
+        "inspects_source": False,
+        "manipulates_source": False,
+        "manipulates_state": False,
+    }
+
+    def __init__(self, initial: Action = D) -> None:
+        four_vector = (0, 1, 0, 0)
+        super().__init__(four_vector)
+        self._initial = initial
+
+class SuckerCoop(MemoryOnePlayer):
+    """Player cooperates initially and after receiving sucker's payoff.
+
+    Names:
+
+    """
+
+    name = "Sucker Coop"
+    classifier = {
+        "memory_depth": 1,  # Memory-one Four-Vector
+        "stochastic": False,
+        "long_run_time": False,
+        "inspects_source": False,
+        "manipulates_source": False,
+        "manipulates_state": False,
+    }
+
+    def __init__(self, initial: Action = C) -> None:
+        four_vector = (0, 1, 0, 0)
+        super().__init__(four_vector)
+        self._initial = initial
+
+class WinShiftLoseStayCoop(MemoryOnePlayer):
+    """Same as Win-Shift Lose-Stay but initial move is to cooperate.
+
+    Names:
+
+    """
+
+    name = "Win-Shift Lose-Stay Coop"
+    classifier = {
+        "memory_depth": 1,  # Memory-one Four-Vector
+        "stochastic": False,
+        "long_run_time": False,
+        "inspects_source": False,
+        "manipulates_source": False,
+        "manipulates_state": False,
+    }
+
+    def __init__(self, initial: Action = C) -> None:
+        four_vector = (0, 1, 1, 0)
+        super().__init__(four_vector)
+        self._initial = initial
+
+class SevenDefect(MemoryOnePlayer):
+    """Player defects initially and defects after receving reward payoff.
+
+    Names:
+
+    """
+
+    name = "Seven Defect"
+    classifier = {
+        "memory_depth": 1,  # Memory-one Four-Vector
+        "stochastic": False,
+        "long_run_time": False,
+        "inspects_source": False,
+        "manipulates_source": False,
+        "manipulates_state": False,
+    }
+
+    def __init__(self, initial: Action = D) -> None:
+        four_vector = (0, 1, 1, 1)
+        super().__init__(four_vector)
+        self._initial = initial
+
+class SevenCoop(MemoryOnePlayer):
+    """Player defects only after receving reward payoff.
+
+    Names:
+
+    """
+
+    name = "Seven Coop"
+    classifier = {
+        "memory_depth": 1,  # Memory-one Four-Vector
+        "stochastic": False,
+        "long_run_time": False,
+        "inspects_source": False,
+        "manipulates_source": False,
+        "manipulates_state": False,
+    }
+
+    def __init__(self, initial: Action = C) -> None:
+        four_vector = (0, 1, 1, 1)
+        super().__init__(four_vector)
+        self._initial = initial
+
+class StubbornDef(MemoryOnePlayer):
+    """
+    Player only cooperates after receviing reward payoff, but this will never happen
+    because the player initially defects and will only defect otherwise - a catch-22.
+    This strategy is exact opposite of Seven Coop.
+
+    Names:
+    """
+
+    name = "Stubborn Def"
+    classifier = {
+        "memory_depth": 1,  # Memory-one Four-Vector
+        "stochastic": False,
+        "long_run_time": False,
+        "inspects_source": False,
+        "manipulates_source": False,
+        "manipulates_state": False,
+    }
+
+    def __init__(self, initial: Action = D) -> None:
+        four_vector = (1, 0, 0, 0)
+        super().__init__(four_vector)
+        self._initial = initial
+
+class StubbornCoop(MemoryOnePlayer):
+    """
+    This strategy is similar to Stubborn Def but the initial move is to cooperate.
+    This strategy is exact opposite of Seven Defect.
+
+    Names:
+    """
+
+    name = "Stubborn Coop"
+    classifier = {
+        "memory_depth": 1,  # Memory-one Four-Vector
+        "stochastic": False,
+        "long_run_time": False,
+        "inspects_source": False,
+        "manipulates_source": False,
+        "manipulates_state": False,
+    }
+
+    def __init__(self, initial: Action = C) -> None:
+        four_vector = (1, 0, 0, 0)
+        super().__init__(four_vector)
+        self._initial = initial
+
+class WinStayLoseShiftDef(MemoryOnePlayer):
+    """This strategy is similar to Win-Stay Lose-Shift but the initial move is to defect.
+
+    Names:
+    """
+
+    name = "Win-Stay Lose-Shift Defect"
+    classifier = {
+        "memory_depth": 1,  # Memory-one Four-Vector
+        "stochastic": False,
+        "long_run_time": False,
+        "inspects_source": False,
+        "manipulates_source": False,
+        "manipulates_state": False,
+    }
+
+    def __init__(self, initial: Action = D) -> None:
+        four_vector = (1, 0, 0, 1)
+        super().__init__(four_vector)
+        self._initial = initial
+
+class BitterCooperatorDef(MemoryOnePlayer):
+    """
+    This strategy initially defects and then defects only when it receives sucker's payoff.
+
+    Names:
+    """
+
+    name = "Bitter Cooperator Def"
+    classifier = {
+        "memory_depth": 1,  # Memory-one Four-Vector
+        "stochastic": False,
+        "long_run_time": False,
+        "inspects_source": False,
+        "manipulates_source": False,
+        "manipulates_state": False,
+    }
+
+    def __init__(self, initial: Action = D) -> None:
+        four_vector = (1, 0, 1, 1)
+        super().__init__(four_vector)
+        self._initial = initial
+
+class BitterCooperator(MemoryOnePlayer):
+    """
+    This strategy is to defect only when receives sucker's payoff.
+
+    Names:
+    """
+
+    name = "Bitter Cooperator"
+    classifier = {
+        "memory_depth": 1,  # Memory-one Four-Vector
+        "stochastic": False,
+        "long_run_time": False,
+        "inspects_source": False,
+        "manipulates_source": False,
+        "manipulates_state": False,
+    }
+
+    def __init__(self, initial: Action = C) -> None:
+        four_vector = (1, 0, 1, 1)
+        super().__init__(four_vector)
+        self._initial = initial
+
+class ThirteenDefect(MemoryOnePlayer):
+    """
+    This strategy is to defect initially and only after receiving the temptation payoff. 
+
+    Names:
+    """
+
+    name = "Thirteen Defect"
+    classifier = {
+        "memory_depth": 1,  # Memory-one Four-Vector
+        "stochastic": False,
+        "long_run_time": False,
+        "inspects_source": False,
+        "manipulates_source": False,
+        "manipulates_state": False,
+    }
+
+    def __init__(self, initial: Action = D) -> None:
+        four_vector = (1, 1, 0, 1)
+        super().__init__(four_vector)
+        self._initial = initial
+
+class ThirteenCoop(MemoryOnePlayer):
+    """
+    This strategy is to defect only after receiving the temptation payoff. 
+
+    Names:
+    """
+
+    name = "Thirteen Coop"
+    classifier = {
+        "memory_depth": 1,  # Memory-one Four-Vector
+        "stochastic": False,
+        "long_run_time": False,
+        "inspects_source": False,
+        "manipulates_source": False,
+        "manipulates_state": False,
+    }
+
+    def __init__(self, initial: Action = C) -> None:
+        four_vector = (1, 1, 0, 1)
+        super().__init__(four_vector)
+        self._initial = initial
+
+class FourteenDefect(MemoryOnePlayer):
+    """
+    This strategy is to defect initially and only after receiving the punishment payoff. 
+
+    Names:
+    """
+
+    name = "Fourteen Defect"
+    classifier = {
+        "memory_depth": 1,  # Memory-one Four-Vector
+        "stochastic": False,
+        "long_run_time": False,
+        "inspects_source": False,
+        "manipulates_source": False,
+        "manipulates_state": False,
+    }
+
+    def __init__(self, initial: Action = D) -> None:
+        four_vector = (1, 1, 1, 0)
+        super().__init__(four_vector)
+        self._initial = initial
+
+class FourteenCoop(MemoryOnePlayer):
+    """
+    This strategy is to defect only after receiving the punishment payoff. 
+
+    Names:
+    """
+
+    name = "Fourteen Coop"
+    classifier = {
+        "memory_depth": 1,  # Memory-one Four-Vector
+        "stochastic": False,
+        "long_run_time": False,
+        "inspects_source": False,
+        "manipulates_source": False,
+        "manipulates_state": False,
+    }
+
+    def __init__(self, initial: Action = C) -> None:
+        four_vector = (1, 1, 1, 0)
+        super().__init__(four_vector)
+        self._initial = initial
+
+class CooperatorDef(MemoryOnePlayer):
+    """
+    This strategy is to defect initally and then to cooperate thereafter.
+
+    Names:
+    """
+
+    name = "Cooperator Def"
+    classifier = {
+        "memory_depth": 1,  # Memory-one Four-Vector
+        "stochastic": False,
+        "long_run_time": False,
+        "inspects_source": False,
+        "manipulates_source": False,
+        "manipulates_state": False,
+    }
+
+    def __init__(self, initial: Action = D) -> None:
+        four_vector = (1, 1, 1, 1)
+        super().__init__(four_vector)
+        self._initial = initial
+
 
 class GTFT(MemoryOnePlayer):
     """Generous Tit For Tat Strategy.
