@@ -402,15 +402,16 @@ class StubbornDef(MemoryOnePlayer):
         super().__init__(four_vector)
         self._initial = initial
 
-class StubbornCoop(MemoryOnePlayer):
+class GrimTrigger(MemoryOnePlayer):
     """
+    Cooperates until other player defects, from which point the player will only defect.
     This strategy is similar to Stubborn Def but the initial move is to cooperate.
     This strategy is exact opposite of Seven Defect.
 
     Names:
     """
 
-    name = "Stubborn Coop"
+    name = "Grim Trigger"
     classifier = {
         "memory_depth": 1,  # Memory-one Four-Vector
         "stochastic": False,

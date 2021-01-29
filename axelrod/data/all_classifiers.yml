@@ -178,6 +178,22 @@ Better and Better:
   manipulates_state: false
   memory_depth: .inf
   stochastic: true
+Bitter Cooperator:
+  inspects_source: false
+  long_run_time: false
+  makes_use_of: !!set {}
+  manipulates_source: false
+  manipulates_state: false
+  memory_depth: 1
+  stochastic: false
+Bitter Cooperator Def:
+  inspects_source: false
+  long_run_time: false
+  makes_use_of: !!set {}
+  manipulates_source: false
+  manipulates_state: false
+  memory_depth: 1
+  stochastic: false
 Bully:
   inspects_source: false
   long_run_time: false
@@ -228,6 +244,22 @@ Contrite Tit For Tat:
   manipulates_state: false
   memory_depth: 3
   stochastic: false
+Coop When Both Defect:
+  inspects_source: false
+  long_run_time: false
+  makes_use_of: !!set {}
+  manipulates_source: false
+  manipulates_state: false
+  memory_depth: 1
+  stochastic: false
+Coop When Both Defect 1:
+  inspects_source: false
+  long_run_time: false
+  makes_use_of: !!set {}
+  manipulates_source: false
+  manipulates_state: false
+  memory_depth: 1
+  stochastic: false
 Cooperator:
   inspects_source: false
   long_run_time: false
@@ -236,6 +268,14 @@ Cooperator:
   manipulates_state: false
   memory_depth: 0
   stochastic: false
+Cooperator Def:
+  inspects_source: false
+  long_run_time: false
+  makes_use_of: !!set {}
+  manipulates_source: false
+  manipulates_state: false
+  memory_depth: 1
+  stochastic: false
 Cooperator Hunter:
   inspects_source: false
   long_run_time: false
@@ -243,6 +283,14 @@ Cooperator Hunter:
   manipulates_source: false
   manipulates_state: false
   memory_depth: .inf
+  stochastic: false
+Curious Defector:
+  inspects_source: false
+  long_run_time: false
+  makes_use_of: !!set {}
+  manipulates_source: false
+  manipulates_state: false
+  memory_depth: 1
   stochastic: false
 Cycle Hunter:
   inspects_source: false
@@ -651,6 +699,22 @@ Fortress4:
   manipulates_state: false
   memory_depth: 3
   stochastic: false
+Fourteen Coop:
+  inspects_source: false
+  long_run_time: false
+  makes_use_of: !!set {}
+  manipulates_source: false
+  manipulates_state: false
+  memory_depth: 1
+  stochastic: false
+Fourteen Defect:
+  inspects_source: false
+  long_run_time: false
+  makes_use_of: !!set {}
+  manipulates_source: false
+  manipulates_state: false
+  memory_depth: 1
+  stochastic: false
 GTFT:
   inspects_source: false
   long_run_time: false
@@ -747,6 +811,14 @@ Gradual Killer:
   manipulates_source: false
   manipulates_state: false
   memory_depth: .inf
+  stochastic: false
+Grim Trigger:
+  inspects_source: false
+  long_run_time: false
+  makes_use_of: !!set {}
+  manipulates_source: false
+  manipulates_state: false
+  memory_depth: 1
   stochastic: false
 Grudger:
   inspects_source: false
@@ -1661,6 +1733,22 @@ SelfSteem:
   manipulates_state: false
   memory_depth: .inf
   stochastic: true
+Seven Coop:
+  inspects_source: false
+  long_run_time: false
+  makes_use_of: !!set {}
+  manipulates_source: false
+  manipulates_state: false
+  memory_depth: 1
+  stochastic: false
+Seven Defect:
+  inspects_source: false
+  long_run_time: false
+  makes_use_of: !!set {}
+  manipulates_source: false
+  manipulates_state: false
+  memory_depth: 1
+  stochastic: false
 ShortMem:
   inspects_source: false
   long_run_time: false
@@ -1725,6 +1813,14 @@ Spiteful Tit For Tat:
   manipulates_state: false
   memory_depth: .inf
   stochastic: false
+SpitefulCC:
+  inspects_source: false
+  long_run_time: false
+  makes_use_of: !!set {}
+  manipulates_source: false
+  manipulates_state: false
+  memory_depth: .inf
+  stochastic: false
 Stalker:
   inspects_source: false
   long_run_time: false
@@ -1751,6 +1847,30 @@ Stochastic WSLS:
   manipulates_state: false
   memory_depth: 1
   stochastic: true
+Stubborn Def:
+  inspects_source: false
+  long_run_time: false
+  makes_use_of: !!set {}
+  manipulates_source: false
+  manipulates_state: false
+  memory_depth: 1
+  stochastic: false
+Sucker Coop:
+  inspects_source: false
+  long_run_time: false
+  makes_use_of: !!set {}
+  manipulates_source: false
+  manipulates_state: false
+  memory_depth: 1
+  stochastic: false
+Sucker Defect:
+  inspects_source: false
+  long_run_time: false
+  makes_use_of: !!set {}
+  manipulates_source: false
+  manipulates_state: false
+  memory_depth: 1
+  stochastic: false
 Suspicious Tit For Tat:
   inspects_source: false
   long_run_time: false
@@ -1782,6 +1902,22 @@ TF3:
   manipulates_source: false
   manipulates_state: false
   memory_depth: .inf
+  stochastic: false
+Thirteen Coop:
+  inspects_source: false
+  long_run_time: false
+  makes_use_of: !!set {}
+  manipulates_source: false
+  manipulates_state: false
+  memory_depth: 1
+  stochastic: false
+Thirteen Defect:
+  inspects_source: false
+  long_run_time: false
+  makes_use_of: !!set {}
+  manipulates_source: false
+  manipulates_state: false
+  memory_depth: 1
   stochastic: false
 ThueMorse:
   inspects_source: false
@@ -1847,6 +1983,22 @@ Tricky Level Punisher:
   manipulates_state: false
   memory_depth: .inf
   stochastic: false
+Two Coop:
+  inspects_source: false
+  long_run_time: false
+  makes_use_of: !!set {}
+  manipulates_source: false
+  manipulates_state: false
+  memory_depth: 1
+  stochastic: false
+Two Defect:
+  inspects_source: false
+  long_run_time: false
+  makes_use_of: !!set {}
+  manipulates_source: false
+  manipulates_state: false
+  memory_depth: 1
+  stochastic: false
 Two Tits For Tat:
   inspects_source: false
   long_run_time: false
@@ -1895,7 +2047,23 @@ Win-Shift Lose-Stay:
   manipulates_state: false
   memory_depth: 1
   stochastic: false
+Win-Shift Lose-Stay Coop:
+  inspects_source: false
+  long_run_time: false
+  makes_use_of: !!set {}
+  manipulates_source: false
+  manipulates_state: false
+  memory_depth: 1
+  stochastic: false
 Win-Stay Lose-Shift:
+  inspects_source: false
+  long_run_time: false
+  makes_use_of: !!set {}
+  manipulates_source: false
+  manipulates_state: false
+  memory_depth: 1
+  stochastic: false
+Win-Stay Lose-Shift Defect:
   inspects_source: false
   long_run_time: false
   makes_use_of: !!set {}
